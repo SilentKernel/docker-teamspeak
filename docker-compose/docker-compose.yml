@@ -3,7 +3,7 @@ services:
   teamspeak:
     image: silentk/teamspeak:latest
     ports:
-        - "9987:9987/udp"
+        - "9987-9997:9987-9997/udp"
         - "30033:30033"
         - "10011:10011"
     volumes:
