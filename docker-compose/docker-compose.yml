@@ -1,6 +1,7 @@
 version: '2'
 services:
   teamspeak:
+    container_name: teamspeak
     image: silentk/teamspeak:latest
     ports:
         - "9987-9997:9987-9997/udp"
