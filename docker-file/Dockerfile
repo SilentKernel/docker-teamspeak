@@ -19,7 +19,7 @@ RUN groupadd -g 503 teamspeak &&\
   chown -R teamspeak:teamspeak ${TS_DIRECTORY} /data
 
 # add tini (https://github.com/krallin/tini)
-ENV TINI_VERSION v0.13.1
+ENV TINI_VERSION v0.16.1
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 
