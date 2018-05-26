@@ -4,7 +4,7 @@ mbentley/teamspeak
 docker image for TeamSpeak 3 Server
 based off of debian:stretch
 
-# Please not that this image auto accept teamspeak license, don't use it if you don't accept their license
+### Please not that this image auto accept teamspeak license, don't use it if you don't accept their license
 
 To pull this image:
 `docker pull silentk/teamspeak`
