@@ -1,5 +1,6 @@
-FROM debian:jessie
-MAINTAINER Matt Bentley <mbentley@mbentley.net>
+# Based on Matt Bentley <mbentley@mbentley.net> Work
+FROM debian:stretch
+MAINTAINER Ludovic Frank <ludovic.frank@silentmail.fr>
 
 ENV TS_DIRECTORY=/opt/teamspeak
 
@@ -21,7 +22,7 @@ RUN groupadd -g 503 teamspeak &&\
   chown -R teamspeak:teamspeak ${TS_DIRECTORY} /data
 
 # add tini (https://github.com/krallin/tini)
-ENV TINI_VERSION v0.16.1
+ENV TINI_VERSION v0.18.0
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 
